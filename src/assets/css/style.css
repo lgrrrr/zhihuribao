@@ -1,0 +1,76 @@
+*{padding: 0;margin: 0;}
+html{font-size: 16px;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{vertical-align: middle;}
+.index .header{padding: 0.5rem 0;overflow: auto;}
+.index .header h4{width: 15%;text-align: center;font-size: 1.2rem;}
+.index .header h4,.header h1{float: left;}
+.index .header h4 span{display: block;font-size: 0.8rem;font-weight: 600;}
+.index .header h1{width: 80%;padding-left: 2.5%;border-left: 1px solid #eeeeee;font-size: 1.4rem;font-weight: 500;}
+.index .header h1 img{width: 2.2rem;float: right;}
+/*轮播图*/
+.my-swipe .van-swipe-item {width: 100%;}
+.van-swipe-item a img{width: 100%;}
+.van-swipe-item a p{width: 85%;padding-left: 1rem;position: absolute;font-size: 1.4rem;font-weight: 600;bottom: 2rem;color: #fff;}
+.van-swipe-item a p span{display: block;font-weight: 400;font-size: 0.8rem;padding-top: 0.5rem;}
+.van-swipe__indicators{position: absolute;bottom: 12px;left: 85%;}
+.index .indexText a{color: #000;display: block;overflow: auto;padding: 1.5rem 1rem 0.6rem;}
+.index .indexText a p{line-height: 1.5rem;font-weight: 600;float: left;width: 70%;margin-top: 1rem;}
+.index .indexText a p span{color: #999;font-weight: 300;display: block;font-size: 0.8rem;}
+.index .indexText a img{float: right;width: 5rem;border-radius: 3px;}
+.index .history{border-top: 1px solid #eeeeee;}
+
+
+/*个人中心*/
+.personal .header{padding: 0.8rem 0.6rem;}
+.personal .header h6 img{width: 1rem;}
+.personal .header .head{margin-bottom: 1rem;text-align: center;font-weight: 600;font-size: 1.2rem;}
+.personal .header .head img{display: block;width: 4.5rem;margin: 0 auto;padding: 0.8rem 0;}
+.personal .con{border-top: 1px solid #eeeeee;}
+.personal .con h4{font-weight: 500;padding: 1rem 0.8rem;font-size: 1rem;}
+.personal .con h4 img{width: 1rem;float: right;}
+.personal .footer{position: fixed;bottom: 0;left: 0;width: 100%;overflow: auto;padding-bottom: 2.5rem;}
+.personal .footer a{width: 50%;color: #000;float: left;text-align: center;font-size: 0.85rem;}
+.personal .footer a img{width: 2rem;padding-bottom: 0.5rem;}
+
+/*文章详情*/
+.detailsHeader{position: relative;}
+.detailsHeader img{width: 100%;}
+.detailsHeader h3{font-weight: 600;position: absolute;bottom: 2rem;color: #fff;line-height: 1.6rem;padding-left: 1rem;padding-right: 1.5rem;}
+.detailsHeader p{position: absolute;bottom: 0.5rem;color: #fff;font-size: 0.7rem;right: 0.5rem;}
+.detailsCon p{line-height: 1.8rem;}
+.detailsCon{padding: 0 0.8rem;}
+.detailsCon p img{width: 100%;}
+.detailsCon .meta{padding: 1rem 0;}
+
+/*文章详情底部*/
+.detailFooter{width: 100%;position: fixed;bottom: 0;left: 0;z-index: 99;overflow: auto;padding: 0.6rem 0rem;width: 100%;background-color: #F3F3F3;}
+.detailFooter .jiantou{padding: 0 1.5rem 0 0.8rem;float: left;border-right: 1px solid #DDDDDD;}
+.detailFooter img{width: 1.1rem;}
+.detailFooter .icon{float: left;width: 85%;}
+.detailFooter .icon a{display: inline-block;width: 25%;text-align: center;}
+
+/*评论*/
+.comment h3{padding: 0.5rem 0rem;position: fixed;top: 0;width: 100%;background-color: #fff;letter-spacing: 0.1rem;text-align: center;border-bottom: 1px solid #eeeeee;}
+.comment h3 img{width: 1rem;float: left;padding-left: 0.8rem;padding-top: 0.3rem;}
+.comment .commentCon{margin-top: 2.5rem;}
+.comment .commentCon h4{padding: 0.8rem 1rem;font-size: 0.9rem;}
+.comment .commentCon .con{border-bottom: 1px solid #eeeeee;overflow: auto;padding: 1rem 0rem 1rem 1rem;}
+.comment .commentCon .con .avatar{float: left;width: 2rem;border-radius: 50%;margin-right: 0.5rem;}
+.comment .commentCon .con .conText{float: left;width: 85%;}
+.comment .commentCon .con .conText p{font-size: 0.8rem;line-height: 1.5rem;margin-top: 0.3rem;}
+.comment .commentCon .con .conText h5{font-size: 0.9rem;}
+.comment .commentCon .con .conText h5 img{width: 1rem;float: right;}
+.comment .commentCon .con .conText .nei span{float: right;}
+.comment .commentCon .con .conText .nei img{width: 1rem;padding-left: 2.5rem;}
+.comment .short{width: 100%;border-top: 1px solid #eeeeee;background-color: #fff;}
+.comment .short h4 img{width: 1rem;float: right;}
+.comment .short{margin-top: 0rem;}
+.commentFooter{position: fixed;bottom: 0;width: 100%;background-color: #eeeeee;overflow: auto;padding: 0.7rem;}
+.commentFooter img{border-radius: 50%;width: 1.8rem;float: left;}
+.commentFooter p{float: left;color: rgb(185, 184, 184);font-size: 0.8rem;margin-top: 0.3rem;letter-spacing: 0.1rem;padding-left: 0.5rem;}
+
+/*发布*/
+.answer .header h3 .issue{float: right;padding-right: 0.7rem;color: aqua;font-weight: 500;font-size: 1.1rem;}
+.answer .answerCon{margin-top: 4rem;color: #DDDDDD;padding: 0 0.8rem;font-size: 1.1rem;}

@@ -4,7 +4,6 @@ import Index from '@/views/Index.vue'
 import Personal from '@/views/Personal.vue'
 import Details from '@/views/Details.vue'
 import Comment from '@/views/Comment.vue'
-import Answer from '@/views/Answer.vue'
 
 Vue.use(VueRouter)
 
@@ -24,10 +23,6 @@ const routes = [
   {
     path: '/Comment',
     component: Comment
-  },
-  {
-    path: '/Answer',
-    component: Answer
   }
 ]
 

@@ -1,11 +1,11 @@
 <template>
     <div class="details">
         <div class="detailsHeader">
-            <img :src="pic">
-            <h3>{{name}}</h3>
-            <p>{{imageText}}</p>
+            <img :src="image">
+            <h3>{{title}}</h3>
+            <p>{{image_source}}</p>
         </div>
-        <div class="detailsCon" v-html="con"></div>
+        <div class="detailsCon" v-html="body"></div>
         <DetailsFooter />
     </div>
 </template>
@@ -17,15 +17,17 @@ export default {
     },
     data() {
         return {
-            
+            image:'',
+            title:'',
+            image_source:''
         }
     },
     mounted:function(){
         this.axios.get("news/3892357").then(res => {
-            this.pic=res.data.image;
-            this.name=res.data.title;
-            this.imageText=res.data.image_source;
-            this.con=res.data.body;
+            this.image=res.data.image;
+            this.title=res.data.title;
+            this.image_source=res.data.image_source;
+            this.body=res.data.body;
         })
     }
 }

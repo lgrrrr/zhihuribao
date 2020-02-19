@@ -16,7 +16,7 @@
             </h4>
         </div>
         <div class="footer">
-            <router-link :to="'/Details'" v-for="item in footerList" :key="item.id">
+            <router-link to="" v-for="item in footerList" :key="item.id">
                 <img :src="item.src" alt="">
                 <p>{{item.title}}</p>
             </router-link> 

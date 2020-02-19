@@ -1,16 +1,6 @@
 <template>
     <div class="index">
-        <div class="header">
-            <h4>{{time | nowDay}}<span>{{time | nowMonth}}</span></h4>
-            <h1 v-if="grt=(ho<9?'早上好':
-                    ho<12?'上午好':
-                    ho<15?'中午好':
-                    ho<19?'下午好':
-                    '晚上好'
-                    )">{{grt}}
-                <router-link :to="'Personal'"><img src="@/assets/img/head.jpg" alt=""></router-link>
-            </h1>
-        </div>
+        <Header />
         <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
             <div class="banner">
                 <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
@@ -46,36 +36,17 @@
 </template>
 <script>
 import { Toast } from 'vant';
+import Header from '@/components/Header.vue'
 export default {
-    compoents: {
-
+    components: {
+        Header
     },
     data() {
         return {
-            //时间
-            time:Date.parse(new Date()),
-            //问候语
-            grt:"hello",
-            ho:new Date().getHours(),
-            //刷新加载
             isLoading: false,
-            swiperList: [],
-            conList: [],
-            hisList: []
-        }
-    },
-    filters: {
-        nowDay: function (value) {
-        let date = new Date(value);
-        let d = date.getDate();
-        d = d < 10 ? ('0' + d) : d;
-        return d
-        },
-        nowMonth: function (value) {
-        let date = new Date(value);
-        let MM = date.getMonth() + 1;
-        MM = MM < 10 ? (MM) : MM;  
-        return MM + '月'
+            swiperList: '',
+            conList: '',
+            hisList: ''
         }
     },
     methods: {
@@ -84,10 +55,10 @@ export default {
         },
         //刷新加载
         onRefresh() {
-        setTimeout(() => {
-            this.isLoading = false;
-        }, 1000);
-    }
+            setTimeout(() => {
+                this.isLoading = false;
+            }, 1000);
+        }
     },
     mounted:function(){
         this.axios.get("news/latest").then(res => {
